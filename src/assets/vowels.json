@@ -1,0 +1,802 @@
+[
+  {
+    "ipa": "i",
+    "height": "close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "y",
+    "height": "close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0268",
+    "height": "close",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0289",
+    "height": "close",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u026f",
+    "height": "close",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "u",
+    "height": "close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u026a",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u028f",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u028a",
+    "height": "near-close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "e",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u00f8",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0275",
+    "height": "close-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0264",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "o",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0259",
+    "height": "mid",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u025b",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0153",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u025e",
+    "height": "open-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u028c",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0254",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u00e6",
+    "height": "near-open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0250",
+    "height": "near-open",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "a",
+    "height": "open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0251",
+    "height": "open",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "\u0252",
+    "height": "open",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": false
+  },
+  {
+    "ipa": "i\u0303",
+    "height": "close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "y\u0303",
+    "height": "close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0268\u0303",
+    "height": "close",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0289\u0303",
+    "height": "close",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u026f\u0303",
+    "height": "close",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "u\u0303",
+    "height": "close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u026a\u0303",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u028f\u0303",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u028a\u0303",
+    "height": "near-close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "e\u0303",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u00f8\u0303",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0275\u0303",
+    "height": "close-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0264\u0303",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "o\u0303",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0259\u0303",
+    "height": "mid",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u025b\u0303",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0153\u0303",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u025e\u0303",
+    "height": "open-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u028c\u0303",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0254\u0303",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u00e6\u0303",
+    "height": "near-open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0250\u0303",
+    "height": "near-open",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "a\u0303",
+    "height": "open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0251\u0303",
+    "height": "open",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "\u0252\u0303",
+    "height": "open",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": false
+  },
+  {
+    "ipa": "i\u02d0",
+    "height": "close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "y\u02d0",
+    "height": "close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0268\u02d0",
+    "height": "close",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0289\u02d0",
+    "height": "close",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u026f\u02d0",
+    "height": "close",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "u\u02d0",
+    "height": "close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u026a\u02d0",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u028f\u02d0",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u028a\u02d0",
+    "height": "near-close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "e\u02d0",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u00f8\u02d0",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0275\u02d0",
+    "height": "close-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0264\u02d0",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "o\u02d0",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0259\u02d0",
+    "height": "mid",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u025b\u02d0",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0153\u02d0",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u025e\u02d0",
+    "height": "open-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u028c\u02d0",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0254\u02d0",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u00e6\u02d0",
+    "height": "near-open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0250\u02d0",
+    "height": "near-open",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "a\u02d0",
+    "height": "open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0251\u02d0",
+    "height": "open",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "\u0252\u02d0",
+    "height": "open",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": false,
+    "long": true
+  },
+  {
+    "ipa": "i\u0303\u02d0",
+    "height": "close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "y\u0303\u02d0",
+    "height": "close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0268\u0303\u02d0",
+    "height": "close",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0289\u0303\u02d0",
+    "height": "close",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u026f\u0303\u02d0",
+    "height": "close",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "u\u0303\u02d0",
+    "height": "close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u026a\u0303\u02d0",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u028f\u0303\u02d0",
+    "height": "near-close",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u028a\u0303\u02d0",
+    "height": "near-close",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "e\u0303\u02d0",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u00f8\u0303\u02d0",
+    "height": "close-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0275\u0303\u02d0",
+    "height": "close-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0264\u0303\u02d0",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "o\u0303\u02d0",
+    "height": "close-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0259\u0303\u02d0",
+    "height": "mid",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u025b\u0303\u02d0",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0153\u0303\u02d0",
+    "height": "open-mid",
+    "frontness": "front",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u025e\u0303\u02d0",
+    "height": "open-mid",
+    "frontness": "central",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u028c\u0303\u02d0",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0254\u0303\u02d0",
+    "height": "open-mid",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u00e6\u0303\u02d0",
+    "height": "near-open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0250\u0303\u02d0",
+    "height": "near-open",
+    "frontness": "central",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "a\u0303\u02d0",
+    "height": "open",
+    "frontness": "front",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0251\u0303\u02d0",
+    "height": "open",
+    "frontness": "back",
+    "rounding": false,
+    "nasal": true,
+    "long": true
+  },
+  {
+    "ipa": "\u0252\u0303\u02d0",
+    "height": "open",
+    "frontness": "back",
+    "rounding": true,
+    "nasal": true,
+    "long": true
+  }
+]

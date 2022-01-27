@@ -1,0 +1,43 @@
+{
+  "American English": {
+    "consonants": ["m", "n", "ŋ", "p", "b", "t", "d", "k", "g", "tʃ", "dʒ", "f", "v", "θ", "ð", "h", "s", "z", "ʃ", "ʒ", "w", "ɹ", "j", "l"],
+    "vowels": []
+  },
+  "Spanish": {
+    "consonants": ["m", "n", "ɲ", "p", "b", "t", "d", "k", "g", "tʃ", "f", "ʝ", "x", "s", "ɾ", "r", "l"],
+    "vowels": []
+  },
+  "Japanese": {
+    "consonants": ["m", "n", "p", "b", "t", "d", "k", "g", "tɕ", "dʑ", "h", "s", "z", "w", "j", "ɾ"],
+    "vowels": []
+  },
+  "Persian": {
+    "consonants": ["m", "n", "p", "b", "t", "d", "k", "g", "ɢ", "ʔ", "tʃ", "dʒ", "f", "v", "x", "h", "s", "z", "ʃ", "ʒ", "j", "ɾ", "l"],
+    "vowels": []
+  },
+  "Welsh": {
+    "consonants": ["m̥", "m", "n̥", "n", "ŋ̥", "ŋ", "p", "b", "t", "d", "k", "g", "f", "v", "θ", "ð", "χ", "h", "s", "ʃ", "w", "j", "r̥", "r", "ɬ", "l"],
+    "vowels": []
+  },
+  "Polish": {
+    "consonants": ["m", "n", "ɲ", "ŋ", "p", "b", "t", "d", "k", "g", "ts", "dz", "ʈʂ", "ɖʐ", "tɕ", "dʑ", "f", "v", "x", "s", "z", "ʂ", "ʐ", "ɕ", "ʑ", "w", "j", "r", "l"],
+    "vowels": []
+  },
+  "Hawaiian": {
+    "consonants": ["m", "n", "p", "k", "ʔ", "h", "w", "l"],
+    "vowels": []
+  },
+  "Cherokee": {
+    "consonants": ["m", "n", "t", "k", "ʔ", "ts", "h", "s", "j", "ɰ", "tɬ", "l"],
+    "vowels": []
+  },
+  "Mandarin": {
+    "consonants": ["m", "n", "ŋ", "p", "b", "t", "d", "k", "g", "ts", "dz", "ʈʂ", "ɖʐ", "tɕ", "dʑ", "f", "h", "s", "ʂ", "ɕ", "w", "ɻ", "j", "l"],
+    "vowels": []
+  },
+  "German": {
+    "consonants": ["m", "n", "ŋ", "p", "b", "t", "d", "k", "g", "pf", "ts", "tʃ", "f", "v", "x", "ʁ", "h", "s", "z", "ʃ", "j", "l"],
+    "vowels": []
+  }
+}
+
