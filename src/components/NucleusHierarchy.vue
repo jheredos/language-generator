@@ -1,140 +1,244 @@
 <template lang="pug">
 article.card.section-card
-  h5.card-title Nucleus Phonotactics
+  h5.card-title 
+    b Nucleus 
+    | : Diphthongs and Triphthongs
   .card-body
     // Control
     .input-group.mb-3
-      button.btn.btn-primary(@click='submitHierarchy()') Submit
-      button.btn.btn-outline-secondary(@click='resetHierarchy()') Reset
-      button.btn.btn-outline-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Templates
+      button.btn.btn-outline-secondary.dropdown-toggle(
+        type='button' data-toggle='dropdown' 
+        aria-haspopup='true' aria-expanded='false')
+        | Templates
       .dropdown-menu
-        a.dropdown-item(v-for='(tmp, name) in templateHierarchies' :key='name' @click='applyHierarchyTemplate(name)') {{ name }}
-      .form-check
-        input#defaultCheck1.form-check-input(type='checkbox' value='' v-model='showConsonants')
-        label.form-check-label(for='defaultCheck1')
-          | Show syllabic consonants
-    .hierarchy-table-container
-      // Table
-      table.table-bordered.hierarchy-table
+        a.dropdown-item(v-for="i in 3") TODO
+        a.dropdown-item(
+          v-for='(tmp, name) in templateHierarchies' 
+          :key='name' @click='applyHierarchyTemplate(name)')
+          | {{ name }}
+      button.btn.btn-outline-secondary(@click='reset()') Reset
+    .table-container
+      table.table-bordered.all-vowel-table
         thead
           tr
-            th
-            th Phonemes
+            th All vowels
         tbody
-          tr(@click='selected = name' v-for='(name, i) in positionNames' :key='i' :class="{ 'table-primary': selected == name }")
-            th {{ name }}
-            td
-              button.btn.btn-primary.phoneme-btn(v-for='(phoneme, j) in hierarchy[positions[name]]' :key='j' @click='unassignPhoneme(phoneme)')
-                | {{ phoneme }}
-          tr(v-if='showConsonants')
-            th(colspan='2')
-          tr(v-if='showConsonants' @click="selected = 'Syllabic Consonants'" :class="{ 'table-primary': selected == 'Syllabic Consonants' }")
-            th Syllabic Consonants
-            td
-              button.btn.btn-primary.phoneme-btn(v-for="(phoneme, j) in hierarchy['consonants']" :key='j')
-                | {{ phoneme }}
-      .card.phoneme-menu-container
-        .card-body
-          button.btn.btn-primary.phoneme-btn(v-for='(phoneme, i) in vowels' :key='i' @click='assignPhoneme(phoneme)') {{ phoneme }}
-    .examples-container
-      h6.text-muted
-        | Examples: 
-        span(v-for='(x, i) in generateExampleClusters()' :key='i') {{x}}{{ generateExampleClusters().length - 1 &gt; i ? &quot;, &quot; : null }}
+          tr
+            draggable.dnd-area(
+              tag='td' 
+              :list='vowels' 
+              :group="{name: 'vowels', pull: 'clone', put: false}"
+              item-key="id")
+              template(#item='{ element }')
+                button.btn.btn-primary.phoneme-btn.ipa {{ element.ipa }}
+    .table-container
+      table.table-bordered.cluster-table
+        thead
+          th.edge-col Onset
+          th.cluster-col Onglides
+          th.cluster-col Nucleus
+          th.cluster-col Offglides
+          th.edge-col Coda
+        tbody
+          tr
+            td.table-secondary.edge-col
+              h5 C
+            draggable.cluster-col.dnd-area(
+              v-for="(pos, i) in [onglides, nuclei, offglides]" 
+              :key="i" 
+              tag="td" 
+              :list='pos' 
+              :group="{name: 'vowels'}" 
+              @change="uniq()"
+              item-key="id")
+              template(#item='{ element }')
+                button.btn.btn-primary.phoneme-btn.ipa(@click="remove(i, element)") 
+                  | {{ element.ipa }}             
+            td.table-secondary.edge-col
+              h5 C
+    .table-container
+      table.table-bordered.examples-table
+        tr
+          th Examples
+          td.ipa {{ exampleClusters }}
+
+    .input-group
+      .form-check
+        input#allowSyllabicConsonantsCheckbox.form-check-input(
+          type='checkbox' value='' 
+          v-model='allowSyllabicConsonants')
+        label.form-check-label(for='allowSyllabicConsonantsCheckbox')
+          | Allow Syllabic Consonants
+    .table-container(v-if="allowSyllabicConsonants")
+      table.table-bordered.syllabic-cons-table
+        tr
+          th Non-syllabic consonants
+          draggable.dnd-area(tag='td' :list='possibleSyllabicConsonants' group='nucleusConsonants' item-key='id')
+            template(#item='{ element }')
+              button.btn.btn-primary.phoneme-btn.ipa
+                | {{ element.ipa }}
+      table.table-bordered.syllabic-cons-table
+        tr
+          th Syllabic consonants
+          draggable.dnd-area(tag='td' :list='syllabicConsonants' group='nucleusConsonants' item-key='id')
+            template(#item='{ element }')
+              button.btn.btn-primary.phoneme-btn.ipa
+                | {{ element.ipa }}
+    .input-group.continue-btn
+      button.btn.btn-outline-secondary(
+        @click='advance()'
+        ) Continue without Saving
+      button.btn.btn-primary(
+        @click='submitHierarchy()'
+        ) Save and Continue
 </template>
 
-<script>
-export default {
-  name: 'NucleusHierarchy',
-  props: {
-    vowels: Array,
-  },
-  data() {
-    return {
-      positionNames: ["Monophthongs only", "Onglides", "Nuclei", "Offglides"],
-      positions: {
-        "Onglides": "onglides",
-        "Nuclei": "nuclei",
-        "Offglides": "offglides",
-        "Monophthongs only": "monophthongs",
-        "Syllabic consonants": "consonants",
-      },
-      hierarchy: {
-        onglides: [],
-        offglides: [],
-        nuclei: [],
-        monophthongs: [],
-        consonants: [],
-      },
-      showConsonants: false,
-      selected: "Monophthongs only",
-    }
-  },
-  methods: {
-    submitHierarchy() {
+<script lang="coffee">
+import draggable from "vuedraggable"
 
-    },
-    assignPhoneme(p) {
-      let pos = this.positions[this.selected]
-      if(!this.hierarchy[pos].includes(p)) this.hierarchy[pos].push(p);
-      // vowel cannot be in "monophthongs only" and "nuclei"
-      if(this.selected == "Monophthongs only") {
-        this.hierarchy.nuclei = this.hierarchy.nuclei.filter(ph => ph != p)
-        this.hierarchy.onglides = this.hierarchy.onglides.filter(ph => ph != p)
-        this.hierarchy.offglides = this.hierarchy.offglides.filter(ph => ph != p)
-      } else {
-        this.hierarchy.monophthongs = this.hierarchy.monophthongs.filter(ph => ph != p)
-      }
-    },
-    unassignPhoneme(p) {
-      let pos = this.positions[this.selected]
-      this.hierarchy[pos] = this.hierarchy[pos].filter(ph => p != ph)
-    },
-    unassigned() {
-      return this.vowels.filter(v => {
-        return !this.hierarchy.onglides.includes(v) &&
-        !this.hierarchy.offglides.includes(v) &&
-        !this.hierarchy.nuclei.includes(v)
-      })
-    },
-    generateExampleClusters() {
-      if((this.hierarchy.onglides.length + 1) * (this.hierarchy.offglides.length + 1) * this.hierarchy.nuclei.length < 3) return [];
+export default
+  name: "NucleusHierarchy"
+  emits: ["newNucleusHierarchy"]
+  components: {
+    draggable
+  }
 
-      const randMember = arr => arr[Math.floor(Math.random() * arr.length)]
+  data: ->
+    templateHierarchies: []
+    nuclei: []
+    onglides: []
+    offglides: []
+    allowSyllabicConsonants: false
+    syllabicConsonants: []
+    possibleSyllabicConsonants: []
 
-      let examples = [];
-      let i = 0;
-      while(examples.length < 7 && i < 10) {
-        let example = '/';
-        example += (this.hierarchy.onglides.length ? randMember(this.hierarchy.onglides.concat([''])) : '');
-        example += randMember(this.hierarchy.nuclei);
-        example += (this.hierarchy.offglides.length ? randMember(this.hierarchy.offglides.concat([''])) : '');
-        example += '/';
-        examples.includes(example) ? null : examples.push(example)
-        i++
-      }
-      console.log(this.hierarchy)
-      console.log(examples)
-      return examples
-    }
-  },
-  created() {
-    this.hierarchy.monophthongs = this.vowels;
-  },
-}
+  computed:
+    vowels: ->
+      this.nuclei = []
+      this.onglides = []
+      this.offglides = []
+      this.$store.getters.getVowels
 
-// type NucleusHierarchyIPA struct {
-// 	LanguageID   string   `json:"lang_id" bson:"lang_id"`
-// 	Onglides     []string `json:"onglides" bson:"onglides"`
-// 	Nuclei       []string `json:"nuclei" bson:"nuclei"`
-// 	Offglides    []string `json:"offglides" bson:"offglides"`
-// 	Monophthongs []string `json:"monophthongs" bson:"monophthongs"`
-// 	Consonants   []string `json:"consonants" bson:"consonants"`
-// }
+    consonants: -> 
+      this.syllabicConsonants = []
+      cs = _.cloneDeep this.$store.getters.getConsonants
+      this.possibleSyllabicConsonants = cs.filter (c) => c.manner in ['nasal', 'fricative', 'approximant', 'trill'] and c.nonpulmonic == 'pulmonic' and c.voiced
+      cs
+
+    exampleClusters: ->
+      possibilities = (this.onglides.length or 1) * this.nuclei.length * (this.offglides.length or 1)
+      if possibilities < 2 then return ''
+
+      randMember = (arr) -> arr[Math.floor Math.random() * arr.length]
+      examples = []
+      for i in [1..10]
+        example = []
+        example.push randMember(this.onglides).ipa + '\u032F' if this.onglides.length and Math.random(1) > 0.4
+        example.push randMember(this.nuclei).ipa
+        example.push randMember(this.offglides).ipa + '\u032F' if this.offglides.length and Math.random(1) > 0.4
+        exStr = example.reduce ((st, ph) => st + ph), ""
+        unless example.length < 2 or exStr in examples
+          examples.push exStr
+
+      examples.reduce ((xs, x, i) => xs + (if i then ', ' else '') + '/' + x + '/'), ''
+
+  watch:
+    consonants:
+      handler: -> this.$forceUpdate()
+      deep: true
+
+  methods:
+    reset: ->
+      this.nuclei = []
+      this.onglides = []
+      this.offglides = []
+      this.possibleSyllabicConsonants = this.possibleSyllabicConsonants.concat this.syllabicConsonants
+      this.syllabicConsonants = []
+
+    submitHierarchy: ->
+      hierarchy =
+        onglides: this.onglides
+        nuclei: this.nuclei
+        offglides: this.offglides
+        monophthongs: this.vowels
+        consonants: this.syllabicConsonants
+      this.$store.dispatch "updateVowelHierarchy", hierarchy
+      # this.$emit "newNucleusHierarchy", hierarchy
+
+    applyHierarchyTemplate: ->
+
+    advance: ->
+      this.$store.dispatch "advanceProgress"
+
+    # these methods have to be included to make drag-and-drop work
+    add: -> 
+    replace: -> 
+    clone: -> 
+    log: -> 
+
+    remove: (i, vwl) -> 
+      pos =  ['onglides', 'nuclei', 'offglides']
+      this[pos[i]] = this[pos[i]].filter (v) => v.id != vwl.id
+
+    uniq: ->
+      this.onglides = _.uniqBy this.onglides, (v) => v.id
+      this.nuclei = _.uniqBy this.nuclei, (v) => v.id
+      this.offglides = _.uniqBy this.offglides, (v) => v.id
 </script>
 
 <style scoped>
-  .form-check {
-    padding: .5rem;
+  .all-vowel-table {
+    width: 100%;
+    margin: auto;
+    min-height: 8rem;
+  }
+
+  .cluster-table {
+    width: 100%;
+    padding-top: 1rem;
+    margin: auto;
+    min-height: 12rem;
+  }
+
+  .phoneme-btn {
+    margin: .1rem;
+  }
+
+  .dnd-area {
+    padding: 1rem;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .examples-table {
+    width: 100%;
+  }
+
+  .examples-table th {
+    width: 15%;
+  }
+
+  .examples-table td {
+    line-height: 2.5rem;
+    text-align: left;
     padding-left: 2rem;
+  }
+
+  .cluster-col {
+    width: 25%;
+  }
+
+  .edge-col {
+    width: 10%;
+  }
+
+  .syllabic-cons-table {
+    width: 50%;
+    margin: .5rem;
+    min-height: 2rem;
+  }
+
+  .syllabic-cons-table th {
+    width: 20%;
   }
 </style>

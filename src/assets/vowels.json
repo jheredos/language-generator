@@ -5,7 +5,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2000",
+    "description": "Close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "y",
@@ -13,7 +16,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2001",
+    "description": "Close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0268",
@@ -21,7 +27,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2002",
+    "description": "Close central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0289",
@@ -29,7 +38,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2003",
+    "description": "Close central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026f",
@@ -37,7 +49,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2004",
+    "description": "Close back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "u",
@@ -45,7 +60,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2005",
+    "description": "Close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026a",
@@ -53,7 +71,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2006",
+    "description": "Near-close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028f",
@@ -61,7 +82,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2007",
+    "description": "Near-close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028a",
@@ -69,7 +93,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2008",
+    "description": "Near-close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "e",
@@ -77,7 +104,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2009",
+    "description": "Close-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00f8",
@@ -85,7 +115,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2010",
+    "description": "Close-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0275",
@@ -93,7 +126,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2011",
+    "description": "Close-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0264",
@@ -101,7 +137,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2012",
+    "description": "Close-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "o",
@@ -109,7 +148,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2013",
+    "description": "Close-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0259",
@@ -117,7 +159,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2014",
+    "description": "Mid central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025b",
@@ -125,7 +170,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2015",
+    "description": "Open-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0153",
@@ -133,7 +181,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2016",
+    "description": "Open-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025e",
@@ -141,7 +192,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2017",
+    "description": "Open-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028c",
@@ -149,7 +203,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2018",
+    "description": "Open-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0254",
@@ -157,7 +214,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2019",
+    "description": "Open-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00e6",
@@ -165,7 +225,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2020",
+    "description": "Near-open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0250",
@@ -173,7 +236,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2021",
+    "description": "Near-open central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "a",
@@ -181,7 +247,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2022",
+    "description": "Open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0251",
@@ -189,7 +258,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2023",
+    "description": "Open back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0252",
@@ -197,7 +269,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": false
+    "long": false,
+    "id": "2024",
+    "description": "Open back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "i\u0303",
@@ -205,7 +280,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2025",
+    "description": "Nasal close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "y\u0303",
@@ -213,7 +291,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2026",
+    "description": "Nasal close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0268\u0303",
@@ -221,7 +302,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2027",
+    "description": "Nasal close central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0289\u0303",
@@ -229,7 +313,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2028",
+    "description": "Nasal close central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026f\u0303",
@@ -237,7 +324,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2029",
+    "description": "Nasal close back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "u\u0303",
@@ -245,7 +335,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2030",
+    "description": "Nasal close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026a\u0303",
@@ -253,7 +346,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2031",
+    "description": "Nasal near-close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028f\u0303",
@@ -261,7 +357,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2032",
+    "description": "Nasal near-close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028a\u0303",
@@ -269,7 +368,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2033",
+    "description": "Nasal near-close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "e\u0303",
@@ -277,7 +379,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2034",
+    "description": "Nasal close-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00f8\u0303",
@@ -285,7 +390,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2035",
+    "description": "Nasal close-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0275\u0303",
@@ -293,7 +401,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2036",
+    "description": "Nasal close-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0264\u0303",
@@ -301,7 +412,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2037",
+    "description": "Nasal close-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "o\u0303",
@@ -309,7 +423,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2038",
+    "description": "Nasal close-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0259\u0303",
@@ -317,7 +434,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2039",
+    "description": "Nasal mid central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025b\u0303",
@@ -325,7 +445,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2040",
+    "description": "Nasal open-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0153\u0303",
@@ -333,7 +456,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2041",
+    "description": "Nasal open-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025e\u0303",
@@ -341,7 +467,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2042",
+    "description": "Nasal open-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028c\u0303",
@@ -349,7 +478,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2043",
+    "description": "Nasal open-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0254\u0303",
@@ -357,7 +489,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2044",
+    "description": "Nasal open-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00e6\u0303",
@@ -365,7 +500,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2045",
+    "description": "Nasal near-open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0250\u0303",
@@ -373,7 +511,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2046",
+    "description": "Nasal near-open central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "a\u0303",
@@ -381,7 +522,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2047",
+    "description": "Nasal open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0251\u0303",
@@ -389,7 +533,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2048",
+    "description": "Nasal open back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0252\u0303",
@@ -397,7 +544,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": false
+    "long": false,
+    "id": "2049",
+    "description": "Nasal open back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "i\u02d0",
@@ -405,7 +555,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2050",
+    "description": "Long close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "y\u02d0",
@@ -413,7 +566,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2051",
+    "description": "Long close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0268\u02d0",
@@ -421,7 +577,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2052",
+    "description": "Long close central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0289\u02d0",
@@ -429,7 +588,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2053",
+    "description": "Long close central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026f\u02d0",
@@ -437,7 +599,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2054",
+    "description": "Long close back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "u\u02d0",
@@ -445,7 +610,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2055",
+    "description": "Long close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026a\u02d0",
@@ -453,7 +621,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2056",
+    "description": "Long near-close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028f\u02d0",
@@ -461,7 +632,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2057",
+    "description": "Long near-close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028a\u02d0",
@@ -469,7 +643,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2058",
+    "description": "Long near-close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "e\u02d0",
@@ -477,7 +654,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2059",
+    "description": "Long close-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00f8\u02d0",
@@ -485,7 +665,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2060",
+    "description": "Long close-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0275\u02d0",
@@ -493,7 +676,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2061",
+    "description": "Long close-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0264\u02d0",
@@ -501,7 +687,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2062",
+    "description": "Long close-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "o\u02d0",
@@ -509,7 +698,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2063",
+    "description": "Long close-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0259\u02d0",
@@ -517,7 +709,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2064",
+    "description": "Long mid central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025b\u02d0",
@@ -525,7 +720,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2065",
+    "description": "Long open-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0153\u02d0",
@@ -533,7 +731,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2066",
+    "description": "Long open-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025e\u02d0",
@@ -541,7 +742,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2067",
+    "description": "Long open-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028c\u02d0",
@@ -549,7 +753,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2068",
+    "description": "Long open-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0254\u02d0",
@@ -557,7 +764,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2069",
+    "description": "Long open-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00e6\u02d0",
@@ -565,7 +775,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2070",
+    "description": "Long near-open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0250\u02d0",
@@ -573,7 +786,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2071",
+    "description": "Long near-open central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "a\u02d0",
@@ -581,7 +797,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2072",
+    "description": "Long open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0251\u02d0",
@@ -589,7 +808,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2073",
+    "description": "Long open back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0252\u02d0",
@@ -597,7 +819,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": false,
-    "long": true
+    "long": true,
+    "id": "2074",
+    "description": "Long open back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "i\u0303\u02d0",
@@ -605,7 +830,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2075",
+    "description": "Long nasal close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "y\u0303\u02d0",
@@ -613,7 +841,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2076",
+    "description": "Long nasal close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0268\u0303\u02d0",
@@ -621,7 +852,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2077",
+    "description": "Long nasal close central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0289\u0303\u02d0",
@@ -629,7 +863,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2078",
+    "description": "Long nasal close central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026f\u0303\u02d0",
@@ -637,7 +874,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2079",
+    "description": "Long nasal close back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "u\u0303\u02d0",
@@ -645,7 +885,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2080",
+    "description": "Long nasal close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u026a\u0303\u02d0",
@@ -653,7 +896,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2081",
+    "description": "Long nasal near-close front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028f\u0303\u02d0",
@@ -661,7 +907,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2082",
+    "description": "Long nasal near-close front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028a\u0303\u02d0",
@@ -669,7 +918,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2083",
+    "description": "Long nasal near-close back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "e\u0303\u02d0",
@@ -677,7 +929,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2084",
+    "description": "Long nasal close-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00f8\u0303\u02d0",
@@ -685,7 +940,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2085",
+    "description": "Long nasal close-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0275\u0303\u02d0",
@@ -693,7 +951,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2086",
+    "description": "Long nasal close-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0264\u0303\u02d0",
@@ -701,7 +962,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2087",
+    "description": "Long nasal close-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "o\u0303\u02d0",
@@ -709,7 +973,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2088",
+    "description": "Long nasal close-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0259\u0303\u02d0",
@@ -717,7 +984,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2089",
+    "description": "Long nasal mid central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025b\u0303\u02d0",
@@ -725,7 +995,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2090",
+    "description": "Long nasal open-mid front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0153\u0303\u02d0",
@@ -733,7 +1006,10 @@
     "frontness": "front",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2091",
+    "description": "Long nasal open-mid front rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u025e\u0303\u02d0",
@@ -741,7 +1017,10 @@
     "frontness": "central",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2092",
+    "description": "Long nasal open-mid central rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u028c\u0303\u02d0",
@@ -749,7 +1028,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2093",
+    "description": "Long nasal open-mid back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0254\u0303\u02d0",
@@ -757,7 +1039,10 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2094",
+    "description": "Long nasal open-mid back rounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u00e6\u0303\u02d0",
@@ -765,7 +1050,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2095",
+    "description": "Long nasal near-open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0250\u0303\u02d0",
@@ -773,7 +1061,10 @@
     "frontness": "central",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2096",
+    "description": "Long nasal near-open central unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "a\u0303\u02d0",
@@ -781,7 +1072,10 @@
     "frontness": "front",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2097",
+    "description": "Long nasal open front unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0251\u0303\u02d0",
@@ -789,7 +1083,10 @@
     "frontness": "back",
     "rounding": false,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2098",
+    "description": "Long nasal open back unrounded vowel",
+		"selected": false
   },
   {
     "ipa": "\u0252\u0303\u02d0",
@@ -797,6 +1094,9 @@
     "frontness": "back",
     "rounding": true,
     "nasal": true,
-    "long": true
+    "long": true,
+    "id": "2099",
+    "description": "Long nasal open back rounded vowel",
+		"selected": false
   }
 ]

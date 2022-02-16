@@ -6,12 +6,6 @@ article.card.section-card
     // Controls
     .input-group.mb-3
       div
-        button.btn.btn-primary(
-          @click='submitConsonants()'
-          ) Submit
-        button.btn.btn-outline-secondary(
-          @click='resetConsonants()'
-          ) Reset
         button.btn.btn-outline-secondary.dropdown-toggle(
           type='button' data-toggle='dropdown' 
           aria-haspopup='true' aria-expanded='false'
@@ -21,6 +15,9 @@ article.card.section-card
             v-for='(tmp, name) in templates' :key='name' 
             @click='applyConsonantTemplate(name)'
             ) {{ name }}
+        button.btn.btn-outline-secondary(
+          @click='resetConsonants()'
+          ) Reset
       .input-group
         .form-check
           input#showAspiratedCheckbox.form-check-input(
@@ -55,108 +52,96 @@ article.card.section-card
           th
             b {{ manner.toUpperCase() }}
           td(v-for='(place, j) in places' :key='j')
-            button.btn.phoneme-btn(
-              v-for='(phoneme, k) in selection[i][j]' 
+            button.btn.phoneme-btn.ipa(
+              v-for='(phoneme, k) in consonantTable[i][j]' 
               :key='k' @click='phoneme.selected = !phoneme.selected' 
-              :class="{'btn-outline-primary': !phoneme.selected, 'btn-primary': phoneme.selected, 'hidden-phoneme': phoneme.hidden}" 
+              :class="{'btn-outline-primary': !phoneme.selected, 'btn-primary': phoneme.selected, 'hidden-phoneme': !phoneme.selected && phoneme.hidden}" 
               data-toggle='tooltip' data-placement='top' :title='phoneme.description'
               ) {{ phoneme.ipa }}
+    .input-group.continue-btn
+      button.btn.btn-outline-secondary(
+        @click='advance()'
+        ) Continue without Saving
+      button.btn.btn-primary(
+        @click='submitConsonants()'
+        ) Save and Continue
 </template>
 
-<script>
-const allConsonants = require("../assets/consonants.json")
-const allTemplates = require("../assets/templates.json")
+<script lang="coffee">
+allTemplates = require "../assets/templates.json"
 
-export default {
-  name: "ConsonantPicker",
-  emits: ['newConsonantInventory'],
-  data() {
-    return {
-      places: ["bilabial", "labio-dental", "dental", "alveolar", "post-alveolar", "retroflex", "palatal", "velar", "uvular", "pharyngeal", "glottal"],
-      manners: ["nasal", "stop", "affricate", "fricative", "approximant", "tap", "trill", "click"],
-      selection: [],
-      templates: {},
-      display: {
-        aspirated: true,
-        nonpulmonic: false,
-        vclsSon: false,
-      },
-    }
-  },
-  methods: {
-    updateDisplay() {
-      allConsonants.forEach(c => {
-        if(c.selected) {
+export default
+  name: "ConsonantPicker"
+  emits: ['newConsonantInventory']
+
+  data: -> 
+    places: ["bilabial", "labio-dental", "dental", "alveolar", "post-alveolar", "retroflex", "palatal", "velar", "uvular", "pharyngeal", "glottal"]
+    manners: ["nasal", "stop", "affricate", "fricative", "approximant", "tap", "trill", "click"]
+    consonantTable: []
+    templates: {}
+    display: 
+      aspirated: false
+      nonpulmonic: false
+      vclsSon: false
+
+  computed:
+    allConsonants: -> this.$store.getters.allConsonants
+    selection: -> this.$store.getters.getConsonants
+
+  watch:
+    selection: 
+      handler: -> this.$forceUpdate()
+      deep: true
+
+  methods: 
+    updateDisplay: ->
+      for c in this.allConsonants
+        if c.selected
           c.hidden = false
-        } else if(['nasal', 'approximant', 'tap', 'trill'].includes(c.manner) && !c.voiced) {
+        else if ['nasal', 'approximant', 'tap', 'trill'].includes(c.manner) and !c.voiced
           c.hidden = !this.display.vclsSon
-        } else if(c.aspirated) {
+        else if c.aspirated
           c.hidden = !this.display.aspirated
-        } else if(c.nonpulmonic != '') {
+        else if c.nonpulmonic != 'pulmonic'
           c.hidden = !this.display.nonpulmonic
-        } else {
+        else
           c.hidden = false
-        }
-      })
-    },
-    submitConsonants() {
-      let inventory = allConsonants.filter(c => c.selected)
-      console.log("from ConsonantPicker: ", inventory.map(ph => ph.ipa))
-      this.$emit('newConsonantInventory', inventory)
-    },
-    resetConsonants() {
-      allConsonants.forEach(c => c.selected = false)
+
+    submitConsonants: ->
+      inventory = this.allConsonants.filter (c) => c.selected
+      console.log "from ConsonantPicker: ", inventory.map (ph) => ph.ipa
+      this.$store.dispatch "updateConsonants", inventory
+
+    resetConsonants: ->
+      (c.selected = false) for c in this.allConsonants
       this.updateDisplay()
       this.$forceUpdate()
-      // this.$emit('newConsonantInventory', [])
-    },
-    applyConsonantTemplate(t) {
+
+    applyConsonantTemplate: (t) ->
       this.resetConsonants()
-      this.templates[t].forEach(c => c.selected = true)
-    }
-  },
-  beforeMount() {
-    const describeConsonant = (ph) => {
-      let desc = ""
-      desc += (ph.voiced ? "Voiced " : "Voiceless ")
-      desc += (ph.aspirated ? "aspirated " : "")
-      desc += ph.place + " "
-      desc += (ph.sibilant ? "sibilant " : "")
-      desc += (ph.lateral ? "lateral " : "")
-      desc += (ph.nonpulmonic ? ph.nonpulmonic + " " : "")
-      desc += ph.manner
-      return desc
-    }
-    // populate phoneme matrix
-    for(let i = 0; i < this.manners.length; i++) {
-      this.selection.push([])
-      for(let j = 0; j < this.places.length; j++) {
-        this.selection[i].push(
-          allConsonants.filter(c => c.manner == this.manners[i] && c.place == this.places[j])
-        )
-      }
-    }
-    allConsonants.forEach(c => {
-      c.description = describeConsonant(c)
-      c.selected = false
-    })
+      (c.selected = true) for c in this.templates[t]
+
+    advance: ->
+      this.$store.dispatch "advanceProgress"
+
+  beforeMount: ->
+    # populate phoneme matrix
+    for manner, i in this.manners
+      this.consonantTable.push []
+      for place, j in this.places
+        this.consonantTable[i].push this.allConsonants.filter (c) => c.manner == this.manners[i] and c.place == this.places[j]
     this.updateDisplay()
-    // populate templates
-    for(let t in allTemplates) {
-      this.templates[t] = allConsonants.filter(c => allTemplates[t].consonants.includes(c.ipa))
-    }
-  }
-}
+
+    # populate templates
+    for t of allTemplates
+      this.templates[t] = this.allConsonants.filter (c) => allTemplates[t].consonants.includes c.ipa
+
 </script>
 
 
 <style scoped>
   table {
     font-size: small;
-  }
-  
-  .form-check {
-    margin: 1rem;
   }
 
   .hidden-phoneme {

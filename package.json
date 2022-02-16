@@ -12,8 +12,10 @@
     "coffee-loader": "^3.0.0",
     "coffeescript": "^2.6.1",
     "core-js": "^3.6.5",
+    "lodash": "^4.17.21",
     "vue": "^3.0.0",
-    "vuedraggable": "^4.1.0"
+    "vuedraggable": "^4.1.0",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -21,10 +23,14 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "coffee-loader": "^1.0.0",
+    "coffeescript": ">= 2.0.0",
     "eslint": "^6.7.2",
+    "eslint-plugin-coffee": "^0.1.15",
     "eslint-plugin-vue": "^7.0.0",
     "pug": "^3.0.2",
-    "pug-plain-loader": "^1.1.0"
+    "pug-plain-loader": "^1.1.0",
+    "vue-cli-plugin-coffee": "~1.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -42,6 +48,9 @@
       "vue/no-deprecated-slot-attribute": "off"
     }
   },
+  "eslintIgnore": [
+    "*.vue"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",
