@@ -1,5 +1,7 @@
 # The Language Generator
 
+__Check out the development blog [here](https://jheredos.github.io/language-generator/)__
+
 This is an application that leads you step by step through the process of creating a fictional language. Like Klingon and the many languages of Middle Earth, [constructed languages](https://en.wikipedia.org/wiki/Constructed_language) can be a form of artistic expression, an educational tool for better understanding real-world languages, or to add depth to a fictional world. But you don't have to be a professional linguist like Marc Okrand or JRR Tolkien to construct a language. 
 
 I have tried to make the each step accessible to those with little knowledge of linguistics. Templates are available at each step so you can easily draw off of real-world languages. Currently the app makes heavy use of [IPA](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) characters, but features for creating orthographic representations are coming in the future. 
